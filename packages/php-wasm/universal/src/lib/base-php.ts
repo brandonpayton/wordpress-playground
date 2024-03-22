@@ -582,6 +582,15 @@ export abstract class BasePHP implements IsomorphicLocalPHP {
 		);
 	}
 
+	returnThisNumber(num: number): number {
+		return this[__private__dont__use].ccall(
+			'wasm_return_this_number',
+			NUMBER,
+			[NUMBER],
+			[num]
+		);
+	}
+
 	#setPHPCode(code: string) {
 		this[__private__dont__use].ccall(
 			'wasm_set_php_code',

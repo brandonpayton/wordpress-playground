@@ -832,6 +832,14 @@ void wasm_set_skip_shebang(int should_skip_shebang)
 }
 
 /**
+ * Function: wasm_return_this_number
+*/
+int wasm_return_this_number(int number)
+{
+	return number;
+}
+
+/**
  * Function: wasm_set_request_uri
  * ----------------------------
  *  Sets the request path (without the query string) for the next request.

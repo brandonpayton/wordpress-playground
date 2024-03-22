@@ -183,6 +183,10 @@ export class WebPHPEndpoint implements IsomorphicLocalPHP {
 		_private.get(this)!.php.defineConstant(key, value);
 	}
 
+	returnThisNumber(num: number): number {
+		return _private.get(this)!.php.returnThisNumber(num);
+	}
+
 	/** @inheritDoc @php-wasm/web!WebPHP.addEventListener */
 	addEventListener(
 		eventType: PHPEvent['type'],

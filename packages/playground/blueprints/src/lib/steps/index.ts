@@ -6,6 +6,7 @@ import { DefineSiteUrlStep } from './define-site-url';
 import { InstallPluginStep, InstallPluginOptions } from './install-plugin';
 import { InstallThemeStep, InstallThemeOptions } from './install-theme';
 import { LoginStep } from './login';
+import { LogThisNumberStep } from './log-this-number';
 import {
 	RunWpInstallationWizardStep,
 	WordPressInstallationOptions,
@@ -56,6 +57,7 @@ export type GenericStep<Resource> =
 	| InstallPluginStep<Resource>
 	| InstallThemeStep<Resource>
 	| LoginStep
+	| LogThisNumberStep
 	| MkdirStep
 	| MvStep
 	| RequestStep
@@ -86,6 +88,7 @@ export type {
 	InstallThemeStep,
 	InstallThemeOptions,
 	LoginStep,
+	LogThisNumberStep,
 	MkdirStep,
 	MvStep,
 	RequestStep,

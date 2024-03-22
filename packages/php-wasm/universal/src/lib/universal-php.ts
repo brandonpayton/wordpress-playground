@@ -182,6 +182,7 @@ export interface RequestHandler {
 }
 
 export interface IsomorphicLocalPHP extends RequestHandler {
+	returnThisNumber(num: number): number;
 	/**
 	 * Sets the SAPI name exposed by the PHP module.
 	 * @param newName - The new SAPI name.

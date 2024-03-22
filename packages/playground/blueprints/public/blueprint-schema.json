@@ -697,6 +697,32 @@
 						},
 						"step": {
 							"type": "string",
+							"const": "logThisNumber"
+						},
+						"number": {
+							"type": "number"
+						}
+					},
+					"required": ["number", "step"]
+				},
+				{
+					"type": "object",
+					"additionalProperties": false,
+					"properties": {
+						"progress": {
+							"type": "object",
+							"properties": {
+								"weight": {
+									"type": "number"
+								},
+								"caption": {
+									"type": "string"
+								}
+							},
+							"additionalProperties": false
+						},
+						"step": {
+							"type": "string",
 							"const": "mkdir"
 						},
 						"path": {
